@@ -172,6 +172,12 @@ a:hover {
   text-decoration: underline;
   color: #3b82f6;
 }
+.title2_video {
+  color: #fff;
+}
+.title2_video span {
+  text-decoration: underline !important;
+}
 
 .title4 {
   color: #193766;
@@ -189,6 +195,13 @@ a:hover {
 .subtitleP_download {
   font-size: 22px;
   line-height: 36px; /* 163.636% */
+}
+.subtitleP_video {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
 }
 
 .subtitleElem {
@@ -748,6 +761,161 @@ a:hover {
 #customizeFigFour {
   left: 73px;
   bottom: 0;
+}
+
+.video {
+  background-image: url("/content/main/video/formBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 130px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.video__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__row_cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: rgba(59, 130, 246, 0.1);
+  margin-bottom: 15px;
+}
+.video__row_cover span {
+  color: #3b82f6;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.video__row_title {
+  max-width: 777px;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px; /* 137.5% */
+}
+
+.video__row_video {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  padding: 70px 30px 40px;
+  margin-bottom: 60px;
+}
+.video__row_video img {
+  border-radius: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.video__row_video img:hover {
+  cursor: pointer;
+}
+.video__row_video::after {
+  content: "Figma";
+  position: absolute;
+  left: 50%;
+  top: 21px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px; /* 136.364% */
+}
+
+.video_play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.video_play path {
+  stroke: #3b82f6;
+  fill: #3b82f6;
+}
+.video_play:hover {
+  cursor: pointer;
+  background-color: #3b82f6;
+  -webkit-box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
+          box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
+}
+.video_play:hover path {
+  stroke: #fff;
+  fill: #fff;
+}
+
+.cirlce__wrapper {
+  position: absolute;
+  left: 30px;
+  top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 13px;
+     -moz-column-gap: 13px;
+          column-gap: 13px;
+}
+
+.cirlce {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+.cirlce_red {
+  background-color: #fc1f6f;
+}
+.cirlce_yellow {
+  background-color: #FFCC18;
+}
+.cirlce_green {
+  background-color: #1DF359;
+}
+
+.video__row_subtitle {
+  max-width: 777px;
 }
 
 .optimize {

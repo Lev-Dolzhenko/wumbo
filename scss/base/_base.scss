@@ -97,9 +97,14 @@ a {
       color: $colorAccentHover;
     }
   }
+
+  &_video {
+    color: $colorWhite;
+    span {
+      text-decoration: underline !important;
+    }
+  }
 }
-
-
 
 .title4 {
   color: $colorMain;
@@ -117,6 +122,14 @@ a {
   &_download {
     font-size: 22px;
     line-height: 36px; /* 163.636% */
+  }
+
+  &_video {
+    color: $colorSubtitleMuted;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
   }
 }
 
