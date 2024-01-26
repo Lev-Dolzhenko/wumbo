@@ -1,0 +1,62 @@
+.benefits {
+  position: relative;
+
+  padding-top: 100px;
+
+  &::before {
+    content: url("./../../content/main/benefits/formBenefits.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.benefits__title {
+  max-width: 574px;
+  margin: 0 auto 87px;
+}
+
+.benefits__row {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.benefits__row_card {
+  padding: 50px;
+  border-radius: 10px;
+  // background-color: gray;
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: $colorMain;
+    cursor: pointer;
+  }
+
+  &:hover .row_card_icon {
+    background: $colorCardIcon;
+  }
+
+  &:hover .subtitleP_card {
+    color: $colorSubtitleMuted;
+  }
+
+  &:hover .title4_card {
+    color: $colorWhite;
+  }
+}
+.row_card_icon {
+  background-color: $colorMain;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+}
+
+.row_card_title {
+  margin-bottom: 10px;
+}
+.row_card_subtitle {
+}

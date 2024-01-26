@@ -1,0 +1,94 @@
+body {
+  font-family: $fontMain;
+  // color: ;
+  font-size: 16px;
+}
+
+a {
+  transition: color 0.2s linear, text-shadow 0.2s linear;
+
+  &:hover {
+    color: $colorMain !important;
+    text-shadow: 1px 0 $colorMain;
+  }
+}
+
+.overlayBlue {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    #e4efff 0%,
+    rgba(228, 239, 255, 0.6) 92.51%,
+    rgba(228, 239, 255, 0) 100%
+  );
+
+  z-index: -2;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+.title1 {
+  color: $colorMain;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 74px; /* 115.625% */
+
+  &_download {
+    span {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 74px;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.title2 {
+  color: $colorMain;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+
+  &_benefits {
+    text-align: center;
+  }
+}
+
+.titleH3 {
+  // font-size: clamp();
+  // font-weight: ;
+  // line-height: ;
+}
+
+.title4 {
+  color: $colorMain;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px; /* 183.333% */
+}
+
+.subtitleP {
+  color: $colorSubtitle;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px; /* 163.636% */
+
+  &_card {
+    color: $colorSubtitle;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+  }
+}

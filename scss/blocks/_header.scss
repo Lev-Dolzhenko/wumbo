@@ -1,0 +1,77 @@
+.header {
+  position: relative;
+
+  padding: 65px 0;
+
+  &::after {
+    content: url(./../../content/header/fromBG.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: -2;
+  }
+}
+
+.header__grid {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  align-items: center;
+}
+.header__grid_logotype {
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    &:hover {
+      text-shadow: unset;
+    }
+  }
+
+  span {
+    color: $colorMain;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.header__grid_nav {
+  margin-left: 124px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.nav__list_link {
+  color: $colorMainMuted !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__grid_button {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 25px;
+    background-color: $colorWhite;
+    border-radius: 6px;
+
+    color: $colorAccentHover;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+
+    transition: transform 0.1s linear, box-shadow 0.1s linear;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 5px $colorWhite;
+    }
+  }
+}
