@@ -1,0 +1,131 @@
+.social {
+  padding: 100px 0;
+}
+
+.social__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social__wrapper_cover {
+  color: $colorAccentHover;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+
+  background: $colorDownloadBG;
+  border-radius: 100px;
+
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.social__wrapper_title {
+  color: $colorMain;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px; /* 137.5% */
+
+  margin-bottom: 15px;
+
+  span {
+    color: $colorAccentHover;
+    font-size: 32px;
+    text-decoration-line: underline;
+  }
+}
+.social__wrapper_subtitle {
+  color: var(--Muted, #697b98);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  text-align: center;
+
+  max-width: 574px;
+
+  margin: 0 auto 40px;
+}
+.social__wrapper_buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.social_buttons_button {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+
+    padding: 20px 30px;
+    background-color: $colorAccent;
+    border-radius: 6px;
+
+    color: $colorAccentHover;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+
+    path {
+      stroke: $colorAccentHover;
+    }
+
+    transition: background-color 0.2s linear;
+  }
+
+  button:hover {
+    background-color: $colorAccentHover;
+    color: $colorWhite;
+    box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
+
+    path {
+      stroke: $colorWhite;
+    }
+  }
+
+  &_twitter {
+    position: relative;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 15px;
+
+      padding: 20px 30px;
+      background-color: $colorAccent;
+      border-radius: 6px;
+
+      color: $colorAccentHover;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+
+      path {
+        stroke: $colorAccentHover;
+      }
+
+      transition: background-color 0.2s linear;
+    }
+
+    &::before {
+      content: url("./../../content/main/social/sign.png");
+      position: absolute;
+      right: -113px;
+      bottom: -79px;
+    }
+
+    button:hover {
+      background-color: $colorTwitter;
+      color: $colorWhite;
+      box-shadow: 0px 30px 60px 0px rgba(29, 161, 242, 0.25);
+
+      path {
+        stroke: $colorWhite;
+      }
+    }
+  }
+}

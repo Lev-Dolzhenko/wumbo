@@ -33,6 +33,14 @@ a {
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
+
+  &_tamplates {
+    max-width: 1240px;
+  }
+
+  &_customize {
+    max-width: 1178px;
+  }
 }
 
 .none {
@@ -64,13 +72,15 @@ a {
   &_benefits {
     text-align: center;
   }
+
+  &_templates {
+    span {
+      text-decoration: underline;
+    }
+  }
 }
 
-.titleH3 {
-  // font-size: clamp();
-  // font-weight: ;
-  // line-height: ;
-}
+
 
 .title4 {
   color: $colorMain;
@@ -81,14 +91,38 @@ a {
 
 .subtitleP {
   color: $colorSubtitle;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 36px; /* 163.636% */
+  line-height: 30px; /* 187.5% */
 
-  &_card {
-    color: $colorSubtitle;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px; /* 187.5% */
+  &_download {
+    font-size: 22px;
+    line-height: 36px; /* 163.636% */
+  }
+}
+
+.subtitleElem {
+  color: $colorMain;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 26px;
+
+  span {
+    position: relative;
+    color: $colorAccentHover;
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: $colorAccentHover;
+
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
