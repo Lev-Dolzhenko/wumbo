@@ -1,0 +1,38 @@
+.customize {
+  position: relative;
+
+  padding: 100px 0;
+
+  &::after {
+    content: url("./../../content/main/customize/customizeFormOne.png");
+    position: absolute;
+    left: 0;
+    top: 22%;
+    z-index: -1;
+  }
+
+  &::before {
+    content: url("./../../content/main/customize/customizeFormTwo.png");
+    position: absolute;
+    left: -26px;
+    top: 17%;
+    z-index: -1;
+  }
+}
+
+.customize__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customize__row_text {
+  max-width: 571px;
+  padding: 102px 0;
+}
+.customize__row_text_title {
+  margin-bottom: 15px;
+}
+
+.customize__row_text_subtitle {
+  margin-bottom: 15px;
+}

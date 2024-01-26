@@ -1,0 +1,111 @@
+.personal {
+    position: relative;
+
+    &::before {
+        content: url('./../../content/main/personal/formPersonal.png');
+        position: absolute;
+        left: 0;
+        top: 14%;
+        
+        z-index: -1;
+    }
+}
+.container {
+}
+.personal__row {
+  display: flex;
+  align-items: center;
+  column-gap: 85px;
+}
+
+.personal__row_image {
+  img {
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);  }
+}
+
+.personal__row_text {
+  max-width: 574px;
+  padding: 75px 0;
+}
+.personal__row_image {
+}
+
+.personal__row_text_wrapper {
+}
+
+.personal__row_text_title {
+  margin-bottom: 15px;
+}
+
+.personal__row_text_subtitle {
+  margin-bottom: 15px;
+}
+
+.personal__row_text_wrapper {
+  margin-bottom: 30px;
+}
+
+.personal__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.personal__list_item {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  color: $colorMain;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.personal__list_item_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 23px;
+  background: rgba(30, 189, 136, 0.1);
+  border-radius: 100px;
+}
+
+.personal__list_item_image_off {
+  background: rgba(239, 70, 70, 0.1);
+}
+
+.personal__row_text_button {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+
+    padding: 15px 25px;
+    border: 2px solid $colorAccentHover;
+    border-radius: 6px;
+
+    color: $colorAccentHover;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+
+    path {
+      stroke: $colorAccentHover;
+    }
+
+    transition: background-color 0.2s linear, box-shadow 0.2s linear;
+
+    &:hover {
+      background-color: $colorAccentHover;
+      color: $colorWhite;
+      box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
+
+      path {
+        stroke: $colorWhite;
+      }
+    }
+  }
+}

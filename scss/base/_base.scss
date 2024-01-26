@@ -9,7 +9,7 @@ a {
 
   &:hover {
     color: $colorMain !important;
-    text-shadow: 1px 0 $colorMain;
+    text-shadow: 0 0 $colorMain;
   }
 }
 
@@ -39,7 +39,7 @@ a {
   }
 
   &_customize {
-    max-width: 1178px;
+    max-width: 1198px;
   }
 }
 
@@ -76,6 +76,25 @@ a {
   &_templates {
     span {
       text-decoration: underline;
+    }
+  }
+
+  &_customize {
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &_optimize {
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &_personal {
+    span {
+      text-decoration: underline;
+      color: $colorAccentHover;
     }
   }
 }

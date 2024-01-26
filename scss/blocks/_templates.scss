@@ -1,28 +1,41 @@
 .tamplates {
-    padding: 100px 0 300px;
+  position: relative;
+  padding: 100px 0 100px;
+
+  &::after {
+    content: url("./../../content/main/tamplates/cirlceOneTemplates.png");
+    position: absolute;
+    right: 0%;
+    top: 0%;
+
+    z-index: -1;
+  }
+
+  &::before {
+    content: url("./../../content/main/tamplates/cirlceTwoTemplates.png");
+    position: absolute;
+    right: 0;
+    top: 22%;
+
+    z-index: -1;
+  }
 }
 
 .templates__row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .temlates__row_text {
-    padding: 109px 0;
-    max-width: 574px;
+  padding: 109px 0;
+  max-width: 574px;
 }
 
 .template__row_text_title {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .templates__row_text_subtitle {
-    margin-bottom: 15px;
-}
-
-
-.templates__row_images {
+  margin-bottom: 15px;
 }
