@@ -13,6 +13,10 @@ a {
   }
 }
 
+.common {
+  // padding-top: ;
+}
+
 .overlayBlue {
   position: fixed;
   left: 0;
@@ -49,15 +53,15 @@ a {
 
 .title1 {
   color: $colorMain;
-  font-size: 64px;
+  font-size: clamp(2.5rem, 2.071rem + 2.14vw, 4rem);
   font-weight: 400;
-  line-height: 74px; /* 115.625% */
+  line-height: clamp(3.375rem, 3.018rem + 1.79vw, 4.625rem); /* 115.625% */
 
   &_download {
     span {
-      font-size: 64px;
+      font-size: clamp(2.5rem, 2.071rem + 2.14vw, 4rem);
       font-weight: 700;
-      line-height: 74px;
+      // line-height: 74px;
       text-decoration-line: underline;
     }
   }
@@ -65,9 +69,9 @@ a {
 
 .title2 {
   color: $colorMain;
-  font-size: 32px;
+  font-size: clamp(1.25rem, 1.036rem + 1.07vw, 2rem);
   font-weight: 500;
-  line-height: 44px;
+  line-height: clamp(1.625rem, 1.304rem + 1.61vw, 2.75rem);
 
   &_benefits {
     text-align: center;
@@ -108,20 +112,20 @@ a {
 
 .title4 {
   color: $colorMain;
-  font-size: 24px;
+  font-size: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
   font-weight: 700;
   line-height: 44px; /* 183.333% */
 }
 
 .subtitleP {
   color: $colorSubtitle;
-  font-size: 16px;
+  font-size: clamp(1rem, 0.893rem + 0.54vw, 1.375rem);
   font-weight: 400;
   line-height: 30px; /* 187.5% */
 
   &_download {
-    font-size: 22px;
-    line-height: 36px; /* 163.636% */
+    font-size: clamp(1rem, 0.893rem + 0.54vw, 1.375rem);
+    line-height: clamp(1.25rem, 0.964rem + 1.43vw, 2.25rem); /* 163.636% */
   }
 
   &_video {
@@ -135,9 +139,9 @@ a {
 
 .subtitleElem {
   color: $colorMain;
-  font-size: 16px;
+  font-size: clamp(0.813rem, 0.759rem + 0.27vw, 1rem);
   font-weight: 400;
-  line-height: 30px;
+  line-height: clamp(1.063rem, 0.83rem + 1.16vw, 1.875rem);
   padding-left: 26px;
 
   span {
@@ -157,4 +161,8 @@ a {
       transform: translate(-50%, -50%);
     }
   }
+}
+
+button {
+  font-size: clamp(0.688rem, 0.598rem + 0.45vw, 1rem) !important;
 }

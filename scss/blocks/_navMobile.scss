@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+}
+
+.header__grid_burger {
+  display: none;
+  justify-self: end;
+
+  z-index: 2;
+}
+
+.header__grid_nav_mobile {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  // transform: translateX(400px);
+  max-width: clamp(20rem, 17.647rem + 11.76vw, 25rem);
+
+  background-color: $colorWhite;
+
+}
+/* CSS для анимации */
+.hideMenu {
+  animation: mobileMenu 0.2s reverse forwards;
+}
+
+.showMenu {
+  animation: mobileMenu 0.2s forwards;
+}
+
+
+@include mediaMobile {
+  .header__grid_burger {
+    display: block;
+  }
+}

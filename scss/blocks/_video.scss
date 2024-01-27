@@ -21,7 +21,7 @@
   border-radius: 100px;
   background: $colorBackgroundCover;
 
-  margin-bottom: 15px;
+  margin-bottom: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
 
   span {
     color: $colorAccentHover;
@@ -34,7 +34,7 @@
 }
 .video__row_title {
   max-width: 777px;
-  margin: 0 auto 60px;
+  margin: 0 auto clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
 
   text-align: center;
   font-size: 32px;
@@ -47,9 +47,9 @@
 
   background-color: $colorCopyrightBorder;
   border-radius: 30px;
-  padding: 70px 30px 40px;
+  padding: clamp(3.125rem, 2.768rem + 1.79vw, 4.375rem) clamp(0.625rem, 0.268rem + 1.79vw, 1.875rem) clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
 
-  margin-bottom: 60px;
+  margin-bottom: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
 
   img {
     border-radius: 10px;
@@ -77,17 +77,21 @@
 .video_play {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: calc(355 * 100% / 649);
   transform: translate(-50%, -50%);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 150px;
-  height: 150px;
+  width: clamp(3.125rem, 1.339rem + 8.93vw, 9.375rem);
+  height: clamp(3.125rem, 1.339rem + 8.93vw, 9.375rem);
   background-color: $colorWhite;
   border-radius: 50%;
+
+  svg {
+    width: clamp(1.25rem, 0.804rem + 2.23vw, 2.813rem);
+  }
 
   path {
     stroke: $colorAccentHover;
@@ -110,7 +114,7 @@
 
 .cirlce__wrapper {
   position: absolute;
-  left: 30px;
+  left: calc(30 * 100% / 988);
   top: 27px;
 
   display: flex;
@@ -119,8 +123,8 @@
 }
 
 .cirlce {
-  width: 19px;
-  height: 19px;
+  width: clamp(0.813rem, 0.705rem + 0.54vw, 1.188rem);
+  height: clamp(0.813rem, 0.705rem + 0.54vw, 1.188rem);
   border-radius: 50%;
 
   &_red {

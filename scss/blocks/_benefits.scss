@@ -1,7 +1,7 @@
 .benefits {
   position: relative;
-
-  padding-top: 100px;
+  padding: 64px 0;
+  // padding-top: clamp(1.875rem, 0.625rem + 6.25vw, 6.25rem);
 
   &::before {
     content: url("./../../content/main/benefits/formBenefits.png");
@@ -14,7 +14,7 @@
 
 .benefits__title {
   max-width: 574px;
-  margin: 0 auto 87px;
+  margin: 0 auto clamp(1.875rem, 0.857rem + 5.09vw, 5.438rem);
 }
 
 .benefits__row {
@@ -23,7 +23,7 @@
   column-gap: 30px;
 }
 .benefits__row_card {
-  padding: 50px;
+  padding: clamp(1.875rem, 1.518rem + 1.79vw, 3.125rem);
   border-radius: 10px;
   // background-color: gray;
 
@@ -49,14 +49,23 @@
 .row_card_icon {
   background-color: $colorMain;
   border-radius: 6px;
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 70px;
-  height: 70px;
+  padding: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+  margin-bottom: clamp(0.313rem, 0.045rem + 1.34vw, 1.25rem);
+  width: clamp(3.125rem, 2.768rem + 1.79vw, 4.375rem);
+  height: clamp(3.125rem, 2.768rem + 1.79vw, 4.375rem);
 }
 
 .row_card_title {
-  margin-bottom: 10px;
+  margin-bottom: clamp(0rem, -0.179rem + 0.89vw, 0.625rem);
 }
 .row_card_subtitle {
+  p {
+    font-size: clamp(0.875rem, 0.839rem + 0.18vw, 1rem);
+    line-height: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
+  }
+}
+@include mediaMobile {
+  .benefits__row {
+    flex-wrap: wrap;
+  }
 }

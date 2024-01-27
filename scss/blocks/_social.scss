@@ -1,5 +1,5 @@
 .social {
-  padding: 100px 0;
+  padding: 0 0 clamp(0rem, -2.273rem + 11.36vw, 6.25rem);
 }
 
 .social__wrapper {
@@ -19,7 +19,7 @@
   border-radius: 100px;
 
   padding: 10px 20px;
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
 }
 .social__wrapper_title {
   color: $colorMain;
@@ -28,7 +28,7 @@
   font-weight: 500;
   line-height: 44px; /* 137.5% */
 
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
 
   span {
     color: $colorAccentHover;
@@ -45,7 +45,7 @@
 
   max-width: 574px;
 
-  margin: 0 auto 40px;
+  margin: 0 auto clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
 }
 .social__wrapper_buttons {
   display: flex;
@@ -60,7 +60,8 @@
     justify-content: center;
     column-gap: 15px;
 
-    padding: 20px 30px;
+    padding: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem)
+      clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
     background-color: $colorAccent;
     border-radius: 6px;
 
@@ -95,7 +96,8 @@
       justify-content: center;
       column-gap: 15px;
 
-      padding: 20px 30px;
+      padding: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem)
+        clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
       background-color: $colorAccent;
       border-radius: 6px;
 
@@ -127,5 +129,11 @@
         stroke: $colorWhite;
       }
     }
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .social_buttons_button_twitter::before {
+    display: none;
   }
 }

@@ -1,7 +1,9 @@
 .customize {
   position: relative;
 
-  padding: 100px 0;
+  padding: 0 0;
+
+  overflow: hidden;
 
   &::after {
     content: url("./../../content/main/customize/customizeFormOne.png");
@@ -30,9 +32,17 @@
   padding: 102px 0;
 }
 .customize__row_text_title {
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
 }
 
 .customize__row_text_subtitle {
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
 }
+
+@media screen and (max-width: 1150px) {
+  .customize__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+

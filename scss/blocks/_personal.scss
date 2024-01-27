@@ -1,6 +1,8 @@
 .personal {
     position: relative;
 
+    overflow-x: hidden;
+
     &::before {
         content: url('./../../content/main/personal/formPersonal.png');
         position: absolute;
@@ -26,7 +28,7 @@
 
 .personal__row_text {
   max-width: 574px;
-  padding: 75px 0;
+  padding: clamp(2.188rem, 1.473rem + 3.57vw, 4.688rem) 0;
 }
 .personal__row_image {
 }
@@ -57,7 +59,7 @@
   column-gap: 15px;
 
   color: $colorMain;
-  font-size: 16px;
+  font-size: clamp(0.563rem, 0.438rem + 0.63vw, 1rem);
   font-weight: 400;
   line-height: 30px; /* 187.5% */
 }
@@ -83,7 +85,7 @@
     justify-content: center;
     column-gap: 15px;
 
-    padding: 15px 25px;
+    padding: clamp(0.313rem, 0.134rem + 0.89vw, 0.938rem) clamp(0.938rem, 0.759rem + 0.89vw, 1.563rem);
     border: 2px solid $colorAccentHover;
     border-radius: 6px;
 
@@ -91,6 +93,10 @@
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
+
+    svg {
+      width: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+    }
 
     path {
       stroke: $colorAccentHover;
@@ -107,5 +113,13 @@
         stroke: $colorWhite;
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .personal__row {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

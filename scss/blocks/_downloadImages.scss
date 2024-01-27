@@ -1,87 +1,91 @@
 .download__row_images {
-    position: relative;
-    max-width: 583px;
-    width: 100%;
-    height: 582px;
-    
-    // overflow: hidden;
+  position: relative;
+  max-width: 583px;
+  width: 100%;
+  height: 582px;
+
+  // overflow: hidden;
 }
 
 .row__images_image {
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
-
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
 }
 
-
 #avocado {
-    right: 33px;
-    bottom: 128px;
+  right: 33px;
+  bottom: 128px;
 }
 
 #med {
-    top: 79px;
-    right: 400px;
+  top: 79px;
+  right: 400px;
 }
 
 #nullOne {
-    right: 20px;
-    top: 0;
+  right: 20px;
+  top: 0;
 }
 
 .row__images_wrapper {
-    position: absolute;
-    width: 314px;
-    height: 314px;
+  position: absolute;
+  width: 314px;
+  height: 314px;
 
-    bottom: 8px;
-    left: 8px;
+  bottom: 8px;
+  left: 8px;
 }
 
 #person {
-    position: relative;
+  position: relative;
 
-    border: 3px solid $colorAccentSecondary;
+  border: 3px solid $colorAccentSecondary;
 }
 
 #things {
-    right: 140px;
-    top: 0;
+  right: 140px;
+  top: 0;
 }
 
 #time {
-    right: 0;
-    top: 107px;
+  right: 0;
+  top: 107px;
 }
 
 .row__images_pseudo {
-    width: 16px;
-    height: 16px;
-    background-color: $colorWhite;
-    border: 2px solid $colorAccentSecondary;
+  width: 16px;
+  height: 16px;
+  background-color: $colorWhite;
+  border: 2px solid $colorAccentSecondary;
 }
 
 #personPseudoOne {
-    position: absolute;
-    bottom: -5px;
-    left: -8px;
+  position: absolute;
+  bottom: -5px;
+  left: -8px;
 }
 
 #personPseudoTwo {
-    position: absolute;
-    top: -5px;
-    left: -8px;
+  position: absolute;
+  top: -5px;
+  left: -8px;
 }
 
 #personPseudoThree {
-    position: absolute;
-    top: -5px;
-    right: -7px;
+  position: absolute;
+  top: -5px;
+  right: -7px;
 }
 
 #personPseudoFour {
-    position: absolute;
-    bottom: -5px;
-    right: -7px;
+  position: absolute;
+  bottom: -5px;
+  right: -7px;
+}
+
+@include mediaImage {
+  .download__row_images {
+    display: none;
+  }
 }

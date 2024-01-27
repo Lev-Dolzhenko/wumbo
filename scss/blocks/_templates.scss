@@ -1,6 +1,6 @@
 .tamplates {
   position: relative;
-  padding: 100px 0 100px;
+  padding: 0 0 0px;
 
   &::after {
     content: url("./../../content/main/tamplates/cirlceOneTemplates.png");
@@ -33,9 +33,16 @@
 }
 
 .template__row_text_title {
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
 }
 
 .templates__row_text_subtitle {
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+}
+
+@media screen and (max-width: 1210px) {
+  .templates__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

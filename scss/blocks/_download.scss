@@ -1,7 +1,8 @@
 .download {
+  overflow-x: hidden;
   z-index: 1;
 
-  padding-bottom: 100px;
+  // padding-bottom: clamp(1.875rem, 0.625rem + 6.25vw, 6.25rem);
 }
 
 .download__row {
@@ -17,11 +18,11 @@
 }
 
 .row_text_title {
-  margin-bottom: 20px;
+  margin-bottom: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
 }
 
 .row_text_sutitle {
-  margin-bottom: 40px;
+  margin-bottom: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
 }
 
 .row_text_buttons {
@@ -35,9 +36,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: clamp(0.313rem, 0.134rem + 0.89vw, 0.938rem);
 
-    padding: 20px 30px;
+    padding: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem)
+      clamp(0.625rem, 0.268rem + 1.79vw, 1.875rem);
     background-color: $colorAccent;
     border-radius: 6px;
 
@@ -61,5 +63,12 @@
     path {
       stroke: $colorWhite;
     }
+  }
+}
+
+@include mediaImages {
+  .download__row {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

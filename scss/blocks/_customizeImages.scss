@@ -23,3 +23,9 @@
     left: 73px;
     bottom: 0;
 }
+
+@include mediaImage {
+  .customize__row_images {
+    display: none;
+  }
+}

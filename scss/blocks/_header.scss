@@ -1,7 +1,7 @@
 .header {
   position: relative;
 
-  padding: 65px 0;
+  padding: clamp(1.563rem, 0.848rem + 3.57vw, 4.063rem) 0;
 
   &::after {
     content: url(./../../content/header/fromBG.png);
@@ -73,5 +73,30 @@
       transform: scale(1.02);
       box-shadow: 0 0 5px $colorWhite;
     }
+  }
+}
+
+@include mediaMobile {
+  .header__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header__grid_nav {
+    display: none;
+  }
+
+  .header__grid_button {
+    display: none;
+  }
+
+  .header__grid_logotype {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header:after {
+    display: none;
   }
 }
