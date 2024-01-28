@@ -1,12 +1,14 @@
 /* SHOW/HIDE MOBILE MENU */
 
-// const burgerButton = document.getElementById("burgerButton");
-// const navMobile = document.querySelector(".header__grid_nav_mobile");
+const burgerButton = document.getElementById("burgerButton");
+const navMobile = document.querySelector(".header__grid_nav_mobile");
+const overlayBlack = document.querySelector('.overlayBlack');
 
-// burgerButton.addEventListener("click", function () {
-//   navMobile.classList.toggle("showMenu");
-//   navMobile.classList.toggle("hideMenu");
-// });
+burgerButton.addEventListener("click", function () {
+  navMobile.classList.toggle('none');
+  document.body.classList.toggle('overFlowY');
+  overlayBlack.classList.toggle('none');
+});
 
 /* INIT AOS */
 

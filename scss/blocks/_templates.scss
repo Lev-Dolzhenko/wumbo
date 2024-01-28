@@ -2,6 +2,8 @@
   position: relative;
   padding: 0 0 0px;
 
+  overflow: hidden;
+
   &::after {
     content: url("./../../content/main/tamplates/cirlceOneTemplates.png");
     position: absolute;
@@ -28,7 +30,7 @@
 }
 
 .temlates__row_text {
-  padding: 109px 0;
+  padding: clamp(1.5rem, -0.018rem + 7.59vw, 6.813rem) 0;
   max-width: 574px;
 }
 
